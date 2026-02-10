@@ -1,0 +1,5 @@
+npm install @azure/cosmos
+
+Run it:
+=======
+node seed-products.js
