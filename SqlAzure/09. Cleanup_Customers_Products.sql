@@ -42,9 +42,12 @@ BEGIN TRY
     -- --------------------------------------------------------
     DELETE FROM Customers WHERE CustomerID > 150;
 
+    DECLARE @custCount INT = (SELECT COUNT(*) FROM Customers);
+    DECLARE @prodCount INT = (SELECT COUNT(*) FROM Products);
+
     PRINT 'Cleanup completed successfully.';
-    PRINT 'Remaining Customers: ' + CAST((SELECT COUNT(*) FROM Customers) AS VARCHAR(10));
-    PRINT 'Remaining Products:  ' + CAST((SELECT COUNT(*) FROM Products)  AS VARCHAR(10));
+    PRINT 'Remaining Customers: ' + CAST(@custCount AS VARCHAR(10));
+    PRINT 'Remaining Products:  ' + CAST(@prodCount AS VARCHAR(10));
 
     COMMIT TRANSACTION;
 
