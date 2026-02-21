@@ -1,5 +1,9 @@
 # SalesPOC.DB
 
+## Main project
+
+- SalesPOC UI: https://github.com/csdmichael/SalesPOC.UI
+
 This repository contains sample data sources used by the SalesPOC solution.
 
 ## Data sources
@@ -40,6 +44,4 @@ Contains ordered SQL scripts for creating and loading a relational sales dataset
 
 Use this source for structured transactional and reporting scenarios.
 
-## Main project
 
-- SalesPOC UI: https://github.com/csdmichael/SalesPOC.UI
