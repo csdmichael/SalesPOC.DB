@@ -1,10 +1,11 @@
+require("dotenv").config();
 const { CosmosClient } = require("@azure/cosmos");
 
-// 🔹 CONFIGURE THESE
-const endpoint = "REDACTED_COSMOS_ENDPOINT";
-const key = "REDACTED_COSMOS_KEY";
-const databaseId = "sales";
-const containerId = "products";
+// 🔹 CONFIGURE THESE via .env file
+const endpoint = process.env.COSMOS_ENDPOINT;
+const key = process.env.COSMOS_KEY;
+const databaseId = process.env.COSMOS_DATABASE || "sales";
+const containerId = process.env.COSMOS_CONTAINER || "products";
 
 // Product dimensions
 const categories = ["MCU", "ASIC", "FPGA", "Power IC", "Sensor", "RF"];
