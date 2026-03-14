@@ -44,4 +44,6 @@ Contains ordered SQL scripts for creating and loading a relational sales dataset
 
 Use this source for structured transactional and reporting scenarios.
 
+## License
 
+This project is licensed under the [MIT License](LICENSE).
